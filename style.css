@@ -1,0 +1,108 @@
+*::after, *::before, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background-color: lavender;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    margin: 15% 25%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.title span {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: cornflowerblue;
+}
+
+.reviewCard {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+    display: grid;
+}
+
+.imgPerfil {
+    position: relative;
+    display: inline-block;
+    margin: 1rem auto;
+}
+
+.perfil {
+    border-radius: 50%;
+    height: 10em;
+}
+
+.imgPerfil::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotate(-25deg);
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border: 0 solid cornflowerblue;
+    border-width: 0 10px 0 0;
+}
+
+.imgPerfil::before {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 2em;
+    width: 2em;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    color: white;
+    margin: 0.5em 0.5em;
+}
+
+.name {
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.job {
+    color: cornflowerblue;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.jobDescription {
+    text-align: center;
+    margin: 10px 0 20px;
+    color: black;
+}
+
+#generate {
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 auto 0.5rem;
+}
+
